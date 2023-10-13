@@ -14,7 +14,7 @@
  * Description: doubly linked list node structure
  * for Holberton project
  */
-typedef struct dlistint_a
+typedef struct dlistint_s
 {
 	int n;
 	struct dlistint_s *prev;
