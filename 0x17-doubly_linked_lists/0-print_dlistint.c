@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_dlistint - print all the elements of a
@@ -17,13 +17,14 @@ size_t print_dlistint(const dlistint_t *h)
 	if (h == NULL)
 		return (count);
 
-	while (h->prec != NULL)
-		h = h=>prev;
+	while (h->prev != NULL)
+		h = h->prev;
 
-	while (h !- NULL)
+	while (h != NULL)
 	{
 		printf("%d\n", h->n);
-		count**;
+		count++;
+
 		h = h->next;
 	}
 
